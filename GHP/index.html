@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>GREEN HAVEN PROPERTIES</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-
+    free@5.15.3/css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+           <!-- <a href="#"> <img id="logo" src="images (1).png" alt=""></a> -->
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <!-- <li><a href="#">Services</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Projects</a></li> -->
+            <li><a href="#">GREEN HAVEN PROPERTIES CLIENT MANAGEMENT SYSTEM </a></li> 
+        </ul>
+    </div>
+    <div id="loginForm" class="wrapper">
+        <h1>Sign in</h1>
+        <form action="" >
+            <input type="email" placeholder="Enter email" id="user_name_field">
+            <input type="password" placeholder="Enter password" id="psd_field">
+            <!-- <input type="text" placeholder="Enter phone number" id="PN_field">
+            <input type="text" placeholder="Enter date of birth" id="dob_field"> -->
+            <!-- <input type="text" placeholder="Enter password" id="psd_field">
+            <input type="text" placeholder="Enter password" id="psd_field">
+            <input type="text" placeholder="Enter password" id="psd_field"> -->
+            <input onclick="submit()" type="submit" value="LOGIN">
+            <!-- <button onclick="logIn()" type="login" id="login">LOGIN</button> -->
+            <!-- <button id="btn-login" type="button">New login</button> -->
+        </form>
+        <div class="bottom_text">
+            <input type="checkbox" name="remember" checked = "checked">Remember me
+            <a href="#">Forgot password?</a>
+        </div>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            
+        </div>
+    </div>
+    <!-- <div class="overlay_area"></div> -->
+    <!-- <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="images (1).png" alt="">
+                <i class='bx bxs-user-account' ></i>            
+                <div class="logo_name">Controls</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div> -->
+       
+   
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- <script src="index.js"></script> -->
+<script src="submit.js"></script>
+<!-- <script src="signIn.js"></script> -->
+<!-- 
+<script>
+    firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      
+    //   var uid = user.uid;
+      
+
+      document.getElementById("loginForm").style.display = "none";
+    } else {
+      
+      document.getElementById("loginForm").style.display = "block";
+    }
+  });
+</script> -->
+</body>
+</html>

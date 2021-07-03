@@ -1,0 +1,623 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: rgb(3, 133, 35);
+    z-index: 100;
+    transition: width 500ms;
+}
+.sidebar-brand{
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: #fff;
+}
+.sidebar-brand span{
+    display: inline-block;
+    padding-right: 1rem;
+}
+.sidebar-menu li{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+.sidebar-menu li  li{
+    width: 200px;
+    display: none;
+    color: green;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    /* position: absolute; */
+}
+.gallery:hover li{
+    display: block;
+    margin-left: 16px;
+    /* width: 50%; */
+}
+.subs{
+    background: white;
+    border-radius: 2px;
+    padding: 0px;
+}
+.sidebar-menu {
+    margin-top: .5rem;
+}
+.sidebar-menu a{
+    display: block;
+    color: #fff;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* pictures style */
+
+.main-content header button{
+    background: green;
+    width: 120px;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    font-size: small;
+    
+}
+
+.Picmodal-cont button{
+    background-color: rgb(39, 16, 245);
+    color: honeydew;
+    text-align: center;
+    padding: 2px;
+    width: 20%;
+    /* font-weight: bold; */
+    align-items: center;
+}
+.modal-cont button{
+    background-color: green;
+    color: honeydew;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    font-weight: bold;
+    align-items: center;
+}
+.modal-cont{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(228, 20, 20);
+    width: 30%;
+    height: 500px;
+}
+.Picmodal-cont{
+    text-align: center;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid rgb(228, 20, 20);
+    width: 30%;
+    height: 500px;
+}
+.Picmodal-cont img{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: rgb(150, 128, 211);
+    height: 150px;
+    width: 200px;
+}
+.add{
+    margin-top: 20px;
+}
+.des{
+    margin-bottom: 4px;
+}
+.Picmodal-cont .Picmodal-body tbody tr td p{
+    margin-top: 10px;
+    
+}
+.Picmodal-cont .Picmodal-body tbody tr td input{
+    margin-top: 0px;
+    
+    padding: 2px;
+}
+
+.modal-cont h2 {
+    text-align: center;
+    color: green;
+    /* margin-bottom: 5px; */
+}
+.Picmodal-cont h2 {
+    text-align: center;
+    color: green;
+    /* margin-bottom: 5px; */
+}
+.Picmodal-cont .Picmodal-body{
+    margin-top: 5px;
+    
+}
+.Picmodal-cont .Picmodal-body input{
+    width: 100%;
+    height: 30px;
+    
+}
+.Picmodal-cont .Picmodal-body textarea{
+    width: 100%;
+    /* height: 200px; */
+}
+.Picmodal-cont .Picmodal-body p{
+    margin-top: 10px;
+}
+.Picclose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.Picclose:hover,
+.Picclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.subs a {
+    display: block;
+    color: green;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.sidebar-menu a span:first-child{
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+#nav-toggle:checked + .sidebar{
+   width: 70px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li{
+    padding-left: 1rem;
+    text-align: center;
+}
+#nav-toggle:checked + .sidebar li a{
+    padding-left: 0rem;
+}
+
+
+#nav-toggle:checked ~ .main-content {
+   margin-left: 70px;
+    
+}
+#nav-toggle:checked ~ .main-content header {
+    width: calc(100% - 70px);
+    left: 70px;
+    
+}
+.main-content{
+    transition: margin-left 300ms;
+    margin-left: 250px;
+}
+
+/* #nav-toggle:checked + .sidebar li a span{
+    padding-left: 0rem;
+} */
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar ul a span:last-child{
+    display: none;
+ }
+
+.sidebar-menu a.active{
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #000;
+    border-radius: 30px 0px 0px 30px;
+}
+.sidebar-brand h2 img{
+
+    border-radius: 50px;
+}
+.main-content{
+    margin-left: 250px;
+    transition: margin-left 300ms;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+header h3{
+    color: rgb(17, 139, 6);
+}
+header label span{
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+header{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 3px 3px 10px rgba(7, 214, 59, 0.2);
+    position: fixed;
+    left: 250px;
+    width: calc(100% - 260px);
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+}
+#nav-toggle{
+    display: none;
+}
+.search-wrapper {
+    border: 2px solid rgb(7, 177, 78);
+    border-radius: 10%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.test{
+    background: rgb(95, 68, 68);
+    text-align: center;
+    padding-top: 20px;
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+
+}
+main{
+    margin-top: 70px;
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 90px);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single-p:hover{
+    cursor: pointer;
+}
+.card-single-p{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(13, 228, 217);
+    padding: 2rem;
+    border-radius: 2px;
+    height: 100px;
+    
+
+}
+.Pcard-body{
+    /* height: 1000px; */
+    padding: 20px;
+}
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 2rem;
+    border-radius: 2px;
+
+}
+.addEvent{
+    background: #000;
+}
+.card-single div:last-child  span{
+    color:  green;
+    font-size: 3rem;
+}
+/* .card-single h1 + span{
+    color: gray;
+} */
+.card-single div:first-child span{
+    color: green;
+}
+.card-single:last-child{
+    background: green;
+}
+
+.card-single:last-child h2,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span{
+    color: #fff;
+}
+.card{
+    background: #fff;
+    border-radius: 5px;
+    height: 330px;
+
+}
+.Pcard{
+    background: #fff;
+    border-radius: 5px;
+    height: 400px;
+
+}
+.Test{
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* .footer{
+    width: 100%;
+    height: 30px;
+    background: green;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+
+} */
+.Tcard-body{
+    padding: 1rem;
+    font-size: 15px;
+  
+}
+.card-header,
+.card-body{
+    padding: 1rem;
+}
+
+
+.card-header button{
+    background: green;
+    border-radius: 10px;
+    color: #fff;
+    height: 30px;
+    width: 70px;
+    font-size: .7rem;
+    /* padding: .5rem 1rem; */
+    border: 1px solid green;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+.card-header button{
+    width: 150px;
+    font-weight: bold;
+}
+
+.recent-grid{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 67% auto;
+}
+table{border-collapse: collapse;}
+thead tr{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+thead td{
+    font-weight: 700;
+}
+td{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+}
+.Ptable-responsive{
+    width: 100%;
+    overflow: auto;
+    height: 340px;
+}
+.table-responsive{
+    width: 100%;
+    overflow: auto;
+    height: 240px;
+}
+.Dtable-responsive{
+    /* width: 100%; */
+    overflow: auto;
+    height: 100%;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info a{
+    font-size: .8rem;
+    font-weight: 700;
+    color: rgb(74, 11, 221);
+    margin-top: .8rem;
+}
+/* eventsModal */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.Picmodal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.Pmodal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.my-custom-scrollbar{
+    position: relative;
+    height: 240px;
+    overflow: auto;
+}
+
+.btnDiv{
+    text-align: center;
+    widows: 100%;
+    margin-top: 5px;
+}
+.Pmodal-cont button{
+    background-color: rgb(39, 16, 245);
+    color: honeydew;
+    text-align: center;
+    padding: 2px;
+    width: 20%;
+    /* font-weight: bold; */
+    align-items: center;
+}
+.modal-cont button{
+    background-color: green;
+    color: honeydew;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    font-weight: bold;
+    align-items: center;
+}
+.modal-cont{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(228, 20, 20);
+    width: 30%;
+    height: 500px;
+}
+.Pmodal-cont{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid rgb(228, 20, 20);
+    width: 60%;
+    height: 500px;
+}
+
+.Pmodal-cont .Pmodal-body tbody tr td p{
+    margin-top: 10px;
+    
+}
+.Pmodal-cont .Pmodal-body tbody tr td input{
+    margin-top: 0px;
+    
+    padding: 2px;
+}
+
+.modal-cont h2 {
+    text-align: center;
+    color: green;
+    /* margin-bottom: 5px; */
+}
+.Pmodal-cont h2 {
+    text-align: center;
+    color: green;
+    /* margin-bottom: 5px; */
+}
+.Pmodal-cont .Pmodal-body{
+    margin-top: 5px;
+    
+}
+.Pmodal-cont .Pmodal-body input{
+    width: 100%;
+    height: 30px;
+    
+}
+.Pmodal-cont .Pmodal-body textarea{
+    width: 100%;
+    /* height: 200px; */
+}
+.Pmodal-cont .Pmodal-body p{
+    margin-top: 10px;
+}
+.Pclose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.Pclose:hover,
+.Pclose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-cont .modal-body{
+    margin-top: 5px;
+    
+}
+.modal-cont .modal-body input{
+    width: 100%;
+    height: 30px;
+    
+}
+.modal-cont .modal-body textarea{
+    width: 100%;
+}
+.modal-cont .modal-body p{
+    margin-top: 10px;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
